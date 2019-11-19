@@ -1,0 +1,483 @@
+@charset "UTF-8";
+
+
+
+html,header,h1,ul,li,p,main,body{
+	margin:0 ;
+	padding:0 ;
+}
+body {
+font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGosthic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic'
+;
+background: url("image/g.jpg");
+background-size: cover;
+}
+
+/*←footerを固定*/
+.wrapper{
+	min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 57px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+footer{
+  background-color: #333;
+  width: 100%;
+  margin:0 ;
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+}
+footer p{
+  font-size: 80%;
+  color: white;
+  text-align: center;
+  vertical-align:bottom;
+  margin:0;
+  padding-top: 39px;
+}
+a{
+	display: block;
+}
+@media screen and (min-width: 601px){
+main{
+	width:100%;
+	max-width:1500px;
+	margin:0 auto;
+}
+header h1{
+	font-size:5rem;
+	text-align:center;
+	height:100px;
+}
+
+.header-contents{
+	position:relative;
+}
+/*フッターのナビ*/
+#navbox{
+	display:none;
+	margin:0 auto 0 auto;
+	width:100%;
+}
+#navbox ul{
+	list-style-type:none;
+	background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url("image/jangle.jpg");
+	background-size: cover;
+
+ }
+
+#navbox li{
+	padding: 10px 0 10px 8px;
+	color:#20567d;
+	border-bottom:1px solid #ffffff;
+}
+
+#navbtn{
+	position: absolute;
+	top:10%;
+	right:2%;
+	padding:10px;
+	border-radius:0 0 8px 8px;
+	border:6px 20px 6px 20px;
+	background:#fff;
+	cursor:pointer;
+}
+#map{
+text-align: center;
+height: 500px;
+}
+h2{
+	font-size: 30px;
+	margin:0;
+	text-align: center;
+	padding:10px;
+}
+header h1{
+	width:100%;
+	background:green;
+	padding-bottom: 20px;
+	}
+
+#back{
+ height:800px;
+ background: url("image/gori2.jpg");
+ background-size: cover;
+
+ }
+
+ #text{
+ text-align:center;
+ font-weight:bold;
+ font-size:2.5rem;
+ padding:25%;
+ /*縁取り加工*/
+ text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+ 						 -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+ 						 0px 1px 0 #FFF,  0-1px 0 #FFF,
+ 						 -1px 0 0 #FFF, 1px 0 0 #FFF;
+ }
+#animal{
+ background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4)) ,url("image/jangle.jpg");
+ background-size: cover;
+
+}
+
+#animal ul{
+	list-style:none;
+	display:flex;
+	flex-wrap:wrap;
+}
+
+#animal ul li{
+	margin-left: auto;
+	margin-right: auto;
+}
+a img{
+	border-radius:10%;
+	border:9px solid rgba(0,255,0,0.5);
+	transition: 1s;
+	width:350px;
+	margin-right: 10px;
+	margin-left: 10px;
+
+	}
+
+a img:hover {
+    transform: rotateX(360deg); /* �}�E�X�I�[�o�[���ɉ��] */
+}
+a p{
+	text-align:center;
+	font-size:1.6rem;
+	text-shadow:0.5px 0.5px 0 #FFF, -0.5px -0.5px 0 #FFF,
+  						 -0.5px 0.5px 0 #FFF, 0.5px -0.5px 0 #FFF,
+  						 0px 0.5px 0 #FFF,  0-1px 0 #FFF,
+  						 -0.5px 0 0 #FFF, 0.5px 0 0 #FFF;
+}
+li a{
+	text-decoration: none;
+	color:black;
+	}
+
+
+section{
+background:url("image/gori.jpg");
+background-size: cover;
+height:650px;
+	}
+section h1{
+text-align:center;
+padding:10px 0 10px 0 ;
+}
+
+#tab,#tab-in{
+	display:flex;
+	max-width:550px;
+	width:100%;
+	margin:auto auto 10px 10%;
+}
+
+
+#tab li{
+	width:50%;
+	height:30px;
+	list-style-type:none;
+	text-align:center;
+	cursor:pointer;
+	border-radius:8px;
+	padding-top:8px;
+	font-weight:bold;
+}
+#tab li:nth-child(1){
+	background : #5f9ea0;
+}
+
+#tab li:nth-child(2){
+	background : #b0e0e6;
+}
+
+#tab-in li{
+	display : none;
+	padding : 20px;
+	width : 800px;
+	list-style-type:none;
+	width:100%;
+	border-radius:8px;
+
+}
+#tab-in li:nth-child(1){
+	display : block;
+	background : #5f9ea0;
+}
+#tab-in li:nth-child(2){
+	background : #b0e0e6;
+	font-size:5rem;
+	font-weight:bold;
+
+}
+/*���������ݒn*/
+#back2 h1{
+text-align:center;
+padding:10px 0 10px 0 ;
+}
+#back2{
+ background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url("image/jangle2.jpg");
+height:700px;
+}
+#back2 p{
+	margin-left:5%;
+	margin-bottom: 10px;
+	}
+
+/*���]�G�t�F�N�g*/
+.elem {
+	overflow: hidden;
+  position: relative;
+  transition: 1s;
+  opacity: 0.1;
+  transition: 1s;
+  transform: rotate(45deg);
+}
+
+.isAnimate {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ここから*/
+
+@media screen and (max-width: 600px){
+main{
+	width:100%;
+	margin:0 auto;
+	}
+
+header h1{
+max-height:70px;
+	height:100%;
+	font-size:3rem;
+	text-align:center;
+}
+#text{
+text-align:center;
+font-weight:bold;
+font-size:2.5rem;
+padding-top:30%;
+/*縁取り加工*/
+text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+						 -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+						 0px 1px 0 #FFF,  0-1px 0 #FFF,
+						 -1px 0 0 #FFF, 1px 0 0 #FFF;
+}
+
+
+.header-contents{
+	position:relative;
+}
+/*フッターのナビ*/
+#navbox{
+	display:none;
+	margin:0 auto 0 auto;
+	width:100%;
+}
+#navbox ul{
+	list-style-type:none;
+	background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url("image/jangle.jpg");
+	background-size: cover;
+
+ }
+
+#navbox li{
+	padding: 10px 0 10px 8px;
+	color:#20567d;
+	border-bottom:1px solid #ffffff;
+	text-align: center;
+}
+
+#navbtn{
+	position: absolute;
+	top:10%;
+	right:2%;
+	padding:10px;
+	border-radius:0 0 8px 8px;
+	border:6px 20px 6px 20px;
+	background:#fff;
+	cursor:pointer;
+}
+#map{
+text-align: center;
+height: 500px;
+}
+h2{
+	font-size: 30px;
+	margin:0;
+	text-align: center;
+	padding:10px;
+}
+header h1{
+	width:100%;
+	background:green;
+	padding-bottom: 5px;
+	}
+
+#back{
+ height:300px;
+ background: url("image/gori2.jpg");
+ background-size: cover;
+
+ }
+
+ #text{
+ text-align:center;
+ font-weight:bold;
+ font-size:1.5rem;
+ padding:25% 20% 20% 20%;
+ /*縁取り加工*/
+ text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+ 						 -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+ 						 0px 1px 0 #FFF,  0-1px 0 #FFF,
+ 						 -1px 0 0 #FFF, 1px 0 0 #FFF;
+ }
+#animal{
+ background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 255, 0, 0.4)) ,url("image/jangle.jpg");
+ background-size: cover;
+
+}
+#animal ul{
+	list-style:none;
+	display:flex;
+	flex-wrap:wrap;
+
+}
+
+#animal ul li{
+	margin-left: auto;
+	margin-right: auto;
+}
+a img{
+	border-radius:10%;
+	border:9px solid rgba(0,255,0,0.5);
+	transition: 1s;
+	width:150px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+	}
+
+a img:hover {
+    transform: rotateX(360deg); /* �}�E�X�I�[�o�[���ɉ��] */
+}
+a p{
+	text-align:center;
+	font-size:1.6rem;
+	text-shadow:0.5px 0.5px 0 #FFF, -0.5px -0.5px 0 #FFF,
+  						 -0.5px 0.5px 0 #FFF, 0.5px -0.5px 0 #FFF,
+  						 0px 0.5px 0 #FFF,  0-1px 0 #FFF,
+  						 -0.5px 0 0 #FFF, 0.5px 0 0 #FFF;
+}
+li a{
+	text-decoration: none;
+	color:black;
+	}
+
+
+
+section{
+background:url("image/gori.jpg");
+background-size: cover;
+
+height:900px;
+	}
+section h1{
+text-align:center;
+padding:10px 0 10px 0 ;
+}
+
+#tab,#tab-in{
+	display:flex;
+	max-width:350px;
+	width:100%;
+	margin:10px auto;
+}
+
+
+#tab li{
+	width:50%;
+	height:30px;
+	list-style-type:none;
+	text-align:center;
+	cursor:pointer;
+	border-radius:8px;
+	padding-top:8px;
+	font-weight:bold;
+}
+#tab li:nth-child(1){
+	background : #5f9ea0;
+}
+
+#tab li:nth-child(2){
+	background : #b0e0e6;
+}
+
+#tab-in li{
+	display : none;
+	padding : 20px;
+	width : 350px;
+	list-style-type:none;
+	width:100%;
+	border-radius:8px;
+
+}
+#tab-in li:nth-child(1){
+	display : block;
+	background : #5f9ea0;
+}
+#tab-in li:nth-child(2){
+	background : #b0e0e6;
+	font-size:5rem;
+	font-weight:bold;
+
+}
+
+#back2 h1{
+text-align:center;
+padding:10px 0 10px 0 ;
+}
+#back2{
+ background: linear-gradient(to top, rgba(217, 175, 217, 0.7) 0%, rgba(151, 217, 225, 0.7) 100%),url("image/jangle2.jpg");
+height:650px;
+}
+#back2 p{
+	margin-left:5%;
+	margin-bottom: 10px;
+	}
+
+
+.elem {
+	overflow: hidden;
+  position: relative;
+  transition: 1s;
+  opacity: 0.1;
+  transition: 1s;
+  transform: rotate(45deg);
+}
+
+.isAnimate {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+}

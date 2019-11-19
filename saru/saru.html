@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <meta charset="UTF-8">
+
+  <head>
+	<title>サル-類人猿.com</title>
+	<meta name="keyword" content="">
+	<meta name="description" content="">
+  <meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<link rel="stylesheet" href="animal.css">
+<script
+src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+crossorigin="anonymous"></script>
+<script src="animal.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header >
+      <div class="header-contents">
+        <div id="navbtn">Menu</div>
+      <h1>類人猿.com</h1>
+      </div>
+    </header>
+    <main>
+    	<div id="navbox">
+    		<ul>
+    			<li><a href="index.html">ホーム</a></li>
+    			<li><a href="#other">そのほかの類人猿</a></li>
+    		</ul>
+    	</div>
+
+      <section>
+      	<div class="center">
+      		<div>
+      			<img src="image/saru-1.jpg" id="bigimg">
+      		</div>
+      		<ul>
+      			<li>
+      				<img src="image/saru-1.jpg" class="thumb" data-image="image/saru-1.jpg">
+      			</li>
+      			<li>
+      				<img src="image/saru-2.jpg" class="thumb" data-image="image/saru-2.jpg">
+      			</li>
+      			<li>
+      				<img src="image/saru-3.jpg" class="thumb" data-image="image/saru-3.jpg">
+      			</li>
+      			<li>
+      				<img src="image/saru-4.jpg" class="thumb" data-image="image/saru-4.jpg">
+      			</li>
+      		</ul>
+      	</div>
+      </section>
+
+
+    	<div class="sidebar">
+    		<div class="submenu">
+          <h2>▽サルの生態▽</h2>
+    				<p class="hidden">たぶん握力がヤバい
+    				</p>
+    			<h2>▽サルのここがすごい▽</h2>
+    				<p class="hidden">目がクリクリ
+    				</p>
+    			<h2 id="other">▽その他の類人猿▽</h2>
+    				<div class="hidden animal">
+    					<ul>
+    						<li id ="gori">
+    							<a href="gorira.html">
+    								<img src="image/gori-ani.jpg" onmouseover="this.src='image/gori-pro.jpg'" onmouseout="this.src='image/gori-ani.jpg'">
+    								<p>ゴリラ</p>
+    							</a>
+    						</li >
+    						<li id="chin">
+    							<a href="chin.html">
+    								<img src="image/chin-ani.jpg" onmouseover="this.src='image/chin-pro.jpg'" onmouseout="this.src='image/chin-ani.jpg'">
+    								<p>チンパンジー</p>
+    							</a>
+    						</li>
+    						<li id="saru">
+    							<a href="saru.html">
+    								<img src="image/saru-ani.jpg" onmouseover="this.src='image/saru-pro.jpg'" onmouseout="this.src='image/saru-ani.jpg'">
+    								<p>サル</p>
+    							</a>
+    						</li>
+    						<li id="ora">
+    							<a href="ora.html">
+    								<img src="image/ora-ani.jpg" onmouseover="this.src='image/ora-pro.jpg'" onmouseout="this.src='image/ora-ani.jpg'">
+    								<p>オランウータン</p>
+    							</a>
+    						</li>
+    						<li id="hito">
+    							<a href="hito.html">
+    								<img src="image/hito-ani.jpg" onmouseover="this.src='image/hito-pro.jpg'" onmouseout="this.src='image/hito-ani.jpg'">
+    								<p>ヒト</p>
+    							</a>
+    						</li>
+    						<li id="man">
+    							<a href="man.html">
+    								<img src="image/man-ani.jpg" onmouseover="this.src='image/man-pro.jpg'" onmouseout="this.src='image/man-ani.jpg'">
+    								<p>マンドリル</p>
+    							</a>
+    						</li>
+    					</ul>
+    				</div>
+    		</div>
+    	</div>
+    </main>
+<footer>
+    <p>&copy;2019 類人猿.com</p>
+</footer>
+</div>
+</body>
+<script>
+	var thumbs = document.querySelectorAll('.thumb');
+for(var i=0; i < thumbs.length  ; i++){
+	thumbs[i].onmouseover = function(){
+		document.getElementById('bigimg').src = this.dataset.image;
+	};
+}
+</script>
+
+</html>
